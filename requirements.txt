@@ -5,5 +5,4 @@ Jinja2==2.8
 virtualenv==15.1.0
 Werkzeug==0.11.10
 requests==2.11.1
-BeautifulSoup==3.2.1
 beautifulsoup4==4.5.1
