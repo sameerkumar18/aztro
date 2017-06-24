@@ -35,6 +35,8 @@ URL
 
     POST: https://aztro.herokuapp.com
 
+Note: I highly recommend you to host the API for your usage on your own server, and use this Heroku hosted API for test purpose only.
+
 
 Parameters
 ==========
@@ -113,6 +115,19 @@ PHP
     $response = Requests::post('https://aztro.herokuapp.com/?sign=aries&day=today', $headers);
 
 
+Ajax
+^^^^
+.. code-block:: javascript
+
+    $.ajax({
+	 type:'POST',
+	 url:'https://aztro.herokuapp.com?sign=aries&day=today',
+	 success:function(data){
+	 console.log(data);
+	 }
+    });
+
+
 Response
 ^^^^^^^^
 .. code-block:: json
@@ -157,6 +172,7 @@ Credits
 "aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
 Other Contributors - 
     * Harshit Sahni (for the idea)
+    * Aditya Dhawan (for Ajax example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
