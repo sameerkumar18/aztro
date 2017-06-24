@@ -21,13 +21,6 @@ Why aztro?
 ==========
 aztro is perfect for a developer who wants an API that provides horoscope info for sun signs such as Lucky Number, Lucky Color, Mood, Color, Compatibility with other sun signs, description of a sign for that day etc.
 
-.. toctree::
-   :maxdepth: 4
-   :titlesonly:
-
-
-
-
 URL
 ===
 .. code-block:: python
@@ -49,7 +42,7 @@ day :
 
 Usage
 =====
-.. code-block:: text
+.. code-block:: python
 
     POST: https://aztro.herokuapp.com?sign= :sign: &day= :day:
 
@@ -155,7 +148,7 @@ Credits
 
 "aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
 Other Contributors - 
-* Harshit Sahni (for the idea)
+    * Harshit Sahni (for the idea)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
