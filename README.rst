@@ -155,6 +155,8 @@ Credits
 =======
 
 "aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
+Other Contributors - 
+* Harshit Sahni (for the idea)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
