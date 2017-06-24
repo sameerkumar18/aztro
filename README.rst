@@ -21,7 +21,6 @@ Why aztro?
 ==========
 aztro is perfect for a developer who wants an API that provides horoscope info for sun signs such as Lucky Number, Lucky Color, Mood, Color, Compatibility with other sun signs, description of a sign for that day etc.
 
-
 .. toctree::
    :maxdepth: 4
    :titlesonly:
