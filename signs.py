@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def getData(sign,day):
-#    try:
+    try:
         base_url = "http://astrology.kudosmedia.net/m/"
         payload = {'day': str(day)}
         data = requests.get(str(base_url)+str(sign),params=payload)
@@ -27,8 +27,8 @@ def getData(sign,day):
                            'mood': str(mood),'color': str(color),'lucky_number': str(lucky_number),'lucky_time': str(lucky_time)}
         print str(json_tbreturned)
         return json_tbreturned
-#   except:
-#        return str('<div>null <br> Try Again? <br> Seems to be some kind of problem in the parameters :) </div>')
+    except:
+        return str('<div>null <br> Try Again? <br> Seems to be some kind of problem in the parameters :) </div>')
 
 
 #getData(sign="sagittarius",day="yesterday")
