@@ -49,7 +49,7 @@ Usage
 
 Example 
 =======
-Following example is for sign Aries
+The following example is for sun sign aries - 
 
 
 cURL
