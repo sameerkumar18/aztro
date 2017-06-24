@@ -1,5 +1,3 @@
-# aztro
-The Astrology API. Get daily horoscope!
 
 #################################
 Welcome to aztro's documentation!
