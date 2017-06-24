@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf-8')
 
 class API(Resource):
     def get(self):
-        return ""
+        return redirect("https://aztro.readthedocs.io/en/latest/", code=302)
 
     def post(self):
         sign = request.args.get('sign')
