@@ -42,7 +42,7 @@ day :
 
 Usage
 =====
-.. code-block:: python
+.. code-block:: text
 
     POST: https://aztro.herokuapp.com?sign= :sign: &day= :day:
 
