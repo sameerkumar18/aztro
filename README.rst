@@ -44,7 +44,7 @@ Usage
 =====
 .. code-block:: text
 
-    POST: https://aztro.herokuapp.com?sign= :sign: &day= :day:
+    POST: https://aztro.herokuapp.com?sign= <sign> &day= <day>
 
 
 Example 
