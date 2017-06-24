@@ -52,7 +52,7 @@ Usage
 =====
 .. code-block:: text
 
-    POST: https://aztro.herokuapp.com?sign= :sign: &day= :day:
+    POST: https://aztro.herokuapp.com?sign= <sign> &day= <day>
 
 
 Example 
@@ -155,6 +155,8 @@ Credits
 =======
 
 "aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
+Other Contributors - 
+    * Harshit Sahni (for the idea)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
