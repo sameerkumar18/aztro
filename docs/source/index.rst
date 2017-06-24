@@ -1,3 +1,4 @@
+
 #################################
 Welcome to aztro's documentation!
 #################################
@@ -113,7 +114,7 @@ PHP
 
 
 Response
---------
+^^^^^^^^
 .. code-block:: json
 
     {"current_date": "June 23, 2017", "compatibility": " Cancer", "lucky_time": " 7am",
