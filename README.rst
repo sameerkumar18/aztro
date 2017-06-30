@@ -11,7 +11,8 @@ Welcome to aztro's documentation!
 
 What is aztro?
 ==============
-aztro is a REST API made with Flask that provides you with daily horoscope (today, tomorrow and yesterday).
+aztro REST API allows developers to access and integrate the functionality of aztro with other applications. The API retrieves daily horoscopes for yesterday, today, and tomorrow.
+
 Feel free to contribute on `Github <http://github.com/sameerkumar18/aztro>`_.
 
 
@@ -19,7 +20,7 @@ Feel free to contribute on `Github <http://github.com/sameerkumar18/aztro>`_.
 
 Why aztro?
 ==========
-aztro is perfect for a developer who wants an API that provides horoscope info for sun signs such as Lucky Number, Lucky Color, Mood, Color, Compatibility with other sun signs, description of a sign for that day etc.
+aztro is for a developer who wants an API that provides horoscope info for sun signs such as Lucky Number, Lucky Color, Mood, Color, Compatibility with other sun signs, description of a sign for that day etc.
 
 URL
 ===
