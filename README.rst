@@ -120,19 +120,56 @@ Ajax
     });
 
 
-ECMAScript
+ECMAScript (ES6)
 ^^^^^^
 .. code-block:: javascript
 
     const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
     fetch(URL, {
-      method: 'POST'
+        method: 'POST'
     })
     .then(response => response.json())
     .then(json => {
-      const date = json.current_date;
-      console.log(date);
+        const date = json.current_date;
+        console.log(date);
     });
+
+
+ReactJS with ES6
+^^^^^^
+.. code-block:: javascript
+
+    class Main extends Component {
+        constructor(props){
+            super(props);
+            this.state = {
+              json: {}
+            }
+        }
+        
+        componentDidMount () {
+            const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+        fetch(URL, {
+          method: 'POST'
+        }).then(response => response.json())
+        .then(json => { this.setState({json}); });
+        }
+        
+        render() {
+            return (
+              <div>
+                  Current Date: {this.state.json.current_date} <br />
+                  Compatibility: {this.state.json.compatibility} <br />
+                  Lucky Number: {this.state.json.lucky_number} <br />
+                  Lucky Time: {this.state.json.lucky_time} <br />
+                  Color: {this.state.json.color} <br />
+                  Date Range: {this.state.json.date_range} <br />
+                  Mood: {this.state.json.mood} <br />
+                  Description: {this.state.json.description} <br />
+                </div>
+            );
+        }
+    }
 
 
 Response
