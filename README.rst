@@ -149,10 +149,10 @@ ReactJS with ES6
         
         componentDidMount () {
             const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
-        fetch(URL, {
-          method: 'POST'
-        }).then(response => response.json())
-        .then(json => { this.setState({json}); });
+            fetch(URL, {
+                method: 'POST'
+            }).then(response => response.json())
+            .then(json => { this.setState({json}); });
         }
         
         render() {
@@ -166,7 +166,7 @@ ReactJS with ES6
                   Date Range: {this.state.json.date_range} <br />
                   Mood: {this.state.json.mood} <br />
                   Description: {this.state.json.description} <br />
-                </div>
+              </div>
             );
         }
     }
