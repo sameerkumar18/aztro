@@ -221,6 +221,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
+    * Srijit S Madhavan (for ECMAScript and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
