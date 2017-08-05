@@ -147,7 +147,7 @@ ECMAScript (ES6)
 
 ReactJS with ES6
 ^^^^^^
-.. code-block:: javascript
+.. code-block:: jsx
     
     import React, { Component } from 'react';
 
