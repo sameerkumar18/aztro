@@ -129,6 +129,63 @@ Ajax
     });
 
 
+
+ECMAScript (ES6)
+^^^^^^
+.. code-block:: javascript
+
+    const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+    fetch(URL, {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(json => {
+        const date = json.current_date;
+        console.log(date);
+    });
+
+
+ReactJS with ES6
+^^^^^^
+.. code-block:: jsx
+    
+    import React, { Component } from 'react';
+
+    class Aztro extends Component {
+        constructor(props){
+            super(props);
+            this.state = {
+              json: {}
+            }
+        }
+        
+        componentDidMount () {
+            const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+            fetch(URL, {
+                method: 'POST'
+            }).then(response => response.json())
+            .then(json => { this.setState({json}); });
+        }
+        
+        render() {
+            return (
+              <div>
+                  Current Date: {this.state.json.current_date} <br />
+                  Compatibility: {this.state.json.compatibility} <br />
+                  Lucky Number: {this.state.json.lucky_number} <br />
+                  Lucky Time: {this.state.json.lucky_time} <br />
+                  Color: {this.state.json.color} <br />
+                  Date Range: {this.state.json.date_range} <br />
+                  Mood: {this.state.json.mood} <br />
+                  Description: {this.state.json.description} <br />
+              </div>
+            );
+        }
+    }
+
+    export default Aztro;
+
+
 Response
 ^^^^^^^^
 .. code-block:: json
@@ -174,6 +231,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
+    * Srijit S Madhavan (for ECMAScript and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
