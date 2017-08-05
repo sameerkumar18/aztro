@@ -120,6 +120,21 @@ Ajax
     });
 
 
+ECMAScript
+^^^^^^
+.. code-block:: javascript
+
+    const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+    fetch(URL, {
+      method: 'POST'
+    })
+    .then(response => response.json())
+    .then(json => {
+      const date = json.current_date;
+      console.log(date);
+    });
+
+
 Response
 ^^^^^^^^
 .. code-block:: json
