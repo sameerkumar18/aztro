@@ -138,8 +138,10 @@ ECMAScript (ES6)
 ReactJS with ES6
 ^^^^^^
 .. code-block:: javascript
+    
+    import React, { Component } from 'react';
 
-    class Main extends Component {
+    class Aztro extends Component {
         constructor(props){
             super(props);
             this.state = {
@@ -170,6 +172,8 @@ ReactJS with ES6
             );
         }
     }
+
+    export default Aztro;
 
 
 Response
