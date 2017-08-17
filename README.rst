@@ -122,6 +122,7 @@ PHP
         }
 
         $ObjData = aztro('aries', 'today');
+        var_dump($ObjData);
 
     ?>
     
