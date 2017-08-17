@@ -101,12 +101,31 @@ PHP
 .. code-block:: php
 
     <?php
-    include('vendor/rmccue/requests/library/Requests.php');
-    Requests::register_autoloader();
-    $headers = array();
-    $response = Requests::post('https://aztro.herokuapp.com/?sign=aries&day=today', $headers);
-    
 
+      //This fucntion can be used in any PHP framework like laravel, wordpress, drupal, cakephp etc.
+
+      function aztro($sign, $day) {
+        $aztro = curl_init('https://aztro.herokuapp.com/?sign='.$sign.'&day='.$day);
+        curl_setopt_array($aztro, array(
+            CURLOPT_POST => TRUE,
+            CURLOPT_RETURNTRANSFER => TRUE,
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json'
+            )
+        ));
+        $response = curl_exec($aztro);
+        if($response === FALSE){
+            die(curl_error($aztro));
+        }
+        $responseData = json_decode($response, TRUE);
+        return $responseData;
+      }
+
+      $ObjData = aztro('aries', 'today');
+
+    ?>
+    
+    
 Ajax
 ^^^^^^
 .. code-block:: javascript
@@ -221,7 +240,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
-    * Srijit S Madhavan (for ECMAScript and ReactJS example)
+    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for PHP, ECMAScript and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
