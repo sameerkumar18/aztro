@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7"
 install: "pip install -r requirements.txt"
-script: python app.py
+script: python examples/test.py
 
 branches:
   only:
