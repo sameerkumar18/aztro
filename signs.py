@@ -1,13 +1,44 @@
 import requests
+import pytz
+from datetime import datetime
 from bs4 import BeautifulSoup
+from .utils import _setup_debug_logger
+
+SERVER_TIMEZONE = 'America/New_York'
+TIMEDELTA_DAYS = {
+    'yesterday': -1,
+    'today': 0,
+    'tomorrow': 1
+}
+
+logger = _setup_debug_logger(__name__)
+
+
+def get_day_based_on_tz(day, tz):
+    """Gets the client date() based on tz passed as parameter.
+    """
+    server_day = datetime.now(tz=pytz.timezone(SERVER_TIMEZONE)).date()
+    day = 'today'
+    if tz is not None and tz in pytz.all_timezones:
+        client_day = server_day.astimezone(pytz.timezone(tz)).date()
+        # else not necessary, same day
+        asked = TIMEDELTA_DAYS[day]
+        asked_date = client_day + datetime.timedelta(days=asked)
+        if asked_date > server_day:
+            day = 'tomorrow'
+        elif asked_date < server_day:
+            day = 'yesterday'
+    return day
 
 
 def getData(sign, day, tz=None):
+    """Endpoint to parse data from astrology site.
     """
-    """
+    day = get_day_based_on_tz(day, tz)
     try:
         base_url = "http://astrology.kudosmedia.net/m/"
         payload = {'day': str(day)}
+
         data = requests.get(str(base_url) + str(sign), params=payload)
         soup = BeautifulSoup(str(data.content), 'lxml')
 
@@ -43,5 +74,6 @@ def getData(sign, day, tz=None):
             'lucky_time': str(lucky_time)
         }
         return json_tbreturned
-    except:
+    except Exception as e:
+        logger.error("{}".format(e))
         return str('<div>null <br> Try Again? <br> Seems to be some kind of problem in the parameters :) </div>')

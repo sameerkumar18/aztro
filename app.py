@@ -3,6 +3,7 @@ import signs
 from flask import Flask, request, jsonify, redirect
 from flask_restful import Resource, Api
 from flask_cors import CORS, cross_origin
+from .utils import _setup_debug_logger
 
 
 app = Flask(__name__)
@@ -11,6 +12,8 @@ CORS(app, support_credentials=True)
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+logger = _setup_debug_logger(__name__)
 
 
 class API(Resource):
@@ -24,8 +27,8 @@ class API(Resource):
         response = signs.getData(sign=sign, day=day, tz=timezone)
         try:
             return response
-        except:
-            print "error"
+        except Exception as e:
+            logger.error("{}".format(e))
 
 
 @app.errorhandler(404)
