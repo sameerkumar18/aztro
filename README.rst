@@ -3,7 +3,7 @@
 Welcome to aztro's documentation!
 #################################
 
-.. image:: https://image.ibb.co/n3vNXk/aztro.jpg
+.. image:: https://ibb.co/nmOC0b
    :height: 300px
    :width: 300px
    :alt: aztro api logo
