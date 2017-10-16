@@ -2,7 +2,7 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
-from .utils import _setup_debug_logger
+from utils import _setup_debug_logger
 
 SERVER_TIMEZONE = 'America/New_York'
 TIMEDELTA_DAYS = {
