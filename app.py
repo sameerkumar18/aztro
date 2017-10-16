@@ -3,7 +3,7 @@ import signs
 from flask import Flask, request, jsonify, redirect
 from flask_restful import Resource, Api
 from flask_cors import CORS, cross_origin
-from .utils import _setup_debug_logger
+from utils import _setup_debug_logger
 
 
 app = Flask(__name__)
