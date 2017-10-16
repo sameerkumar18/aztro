@@ -4,8 +4,8 @@ Welcome to aztro's documentation!
 #################################
 
 .. image:: https://image.ibb.co/grSuDw/aztro_2.jpg
-   :height: 300px
-   :width: 300px
+   :height: 200px
+   :width: 200px
    :alt: aztro api logo
    :align: center
 
@@ -242,6 +242,7 @@ Other Contributors -
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
     * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for PHP, ECMAScript and ReactJS example)
+    * Prateek Batra (For logo)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
