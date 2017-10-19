@@ -14,7 +14,7 @@ TIMEDELTA_DAYS = {
 logger = _setup_debug_logger(__name__)
 
 
-def get_day_based_on_tz(day, tz):
+def get_day_based_on_tz(arg_day, tz):
     """Gets the client date() based on tz passed as parameter.
     """
     server_day = datetime.now(tz=pytz.timezone(SERVER_TIMEZONE))
@@ -22,7 +22,7 @@ def get_day_based_on_tz(day, tz):
     if tz is not None and tz in pytz.all_timezones:
         client_day = server_day.astimezone(pytz.timezone(tz)).date()
         # else not necessary, same day
-        asked = TIMEDELTA_DAYS[day]
+        asked = TIMEDELTA_DAYS[arg_day]
         asked_date = client_day + timedelta(days=asked)
         if asked_date > server_day.date():
             day = 'tomorrow'
