@@ -24,6 +24,7 @@ class API(Resource):
         sign = request.args.get('sign')
         day = request.args.get('day')
         timezone = request.args.get('tz')
+        print(timezone)
         response = signs.getData(sign=sign, day=day, tz=timezone)
         try:
             return response
@@ -39,4 +40,4 @@ def page_not_found(e):
 api.add_resource(API, '/')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False,threaded=True)

@@ -18,7 +18,6 @@ def get_day_based_on_tz(day, tz):
     """Gets the client date() based on tz passed as parameter.
     """
     server_day = datetime.now(tz=pytz.timezone(SERVER_TIMEZONE))
-    day = 'today'
     if tz is not None and tz in pytz.all_timezones:
         client_day = server_day.astimezone(pytz.timezone(tz)).date()
         # else not necessary, same day
@@ -28,6 +27,8 @@ def get_day_based_on_tz(day, tz):
             day = 'tomorrow'
         elif asked_date < server_day.date():
             day = 'yesterday'
+        elif asked == -1 and asked_date == server_day.date():
+            day = 'today'
     return day
 
 
