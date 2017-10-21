@@ -1,0 +1,3 @@
+*.pyc
+.cache
+__main__.log aztro.signs.log signs.log
