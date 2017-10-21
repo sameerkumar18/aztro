@@ -1,7 +1,7 @@
 import unittest
 
-from aztro.signs import get_day_based_on_tz
-from aztro.signs import SERVER_TIMEZONE
+from signs import get_day_based_on_tz
+from signs import SERVER_TIMEZONE
 
 
 class TestSigns(unittest.TestCase):
