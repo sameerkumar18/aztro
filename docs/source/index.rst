@@ -15,10 +15,6 @@ aztro REST API allows developers to access and integrate the functionality of az
 
 Feel free to contribute on `Github <http://github.com/sameerkumar18/aztro>`_.
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/eHris85478R9Rgz8kb7KDqtT/sameerkumar18/aztro'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/eHris85478R9Rgz8kb7KDqtT/sameerkumar18/aztro.svg' />
-</a>
-
 Why aztro?
 ==========
 aztro is for a developer who wants an API that provides horoscope info for sun signs such as Lucky Number, Lucky Color, Mood, Color, Compatibility with other sun signs, description of a sign for that day etc. 
