@@ -27,7 +27,9 @@ aztro is for a developer who wants an API that provides horoscope info for sun s
    :maxdepth: 4
    :titlesonly:
 
-
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/eHris85478R9Rgz8kb7KDqtT/sameerkumar18/aztro'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/eHris85478R9Rgz8kb7KDqtT/sameerkumar18/aztro.svg' />
+</a>
 
 
 URL
