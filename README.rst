@@ -207,6 +207,13 @@ Response
       the same way. Give yourself the evening off. Refuse to be put in charge of anything."}
 
 
+Tests
+=======
+.. code-block:: text
+
+    pip install nose
+    nosetests tests
+
 
 License
 =======
