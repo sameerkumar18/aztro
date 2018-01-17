@@ -237,9 +237,8 @@ Donation
 ========
 
 If this project help you reduce time to develop, please consider donating :) 
-
-
-[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.me/sameerkumar18)
+'''
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/sameerkumar18)
 
 
 Credits
