@@ -211,7 +211,7 @@ Response
 License
 =======
 
-Copyright 2017 Sameer Kumar
+Copyright 2018 Sameer Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -232,6 +232,14 @@ Contact
 
 Questions? Suggestions? Feel free to contact me at sameer18051998@gmail.com
 
+
+Donation
+========
+
+If this project help you reduce time to develop, please consider donating :) 
+
+
+[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.me/sameerkumar18)
 
 
 Credits
