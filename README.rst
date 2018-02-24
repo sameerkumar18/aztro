@@ -127,7 +127,7 @@ PHP
     ?>
     
     
-Ajax
+jQuery Ajax
 ^^^^^^
 .. code-block:: javascript
 
