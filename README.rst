@@ -26,7 +26,7 @@ URL
 ===
 .. code-block:: python
 
-    POST: https://aztro.herokuapp.com
+    POST: https://aztro.sameerkumar.website
 Note: I highly recommend you to host the API for your usage on your own server, and use this Heroku hosted API for test purpose only.
 
 
@@ -46,7 +46,7 @@ Usage
 =====
 .. code-block:: text
 
-    POST: https://aztro.herokuapp.com?sign= <sign> &day= <day>
+    POST: https://aztro.sameerkumar.website?sign= <sign> &day= <day>
 
 
 Example 
@@ -59,7 +59,7 @@ cURL
 .. code-block:: python
 
     curl -X POST \
-    'https://aztro.herokuapp.com/?sign=aries&day=today'
+    'https://aztro.sameerkumar.website/?sign=aries&day=today'
 
 
 Python
@@ -73,7 +73,7 @@ Python
     ('day', 'today'),
     )
 
-    requests.post('https://aztro.herokuapp.com/', params=params)
+    requests.post('https://aztro.sameerkumar.website/', params=params)
 
 
 Node.js
@@ -83,7 +83,7 @@ Node.js
     var request = require('request');
 
     var options = {
-    url: 'https://aztro.herokuapp.com/?sign=aries&day=today',
+    url: 'https://aztro.sameerkumar.website/?sign=aries&day=today',
     method: 'POST'
     };
 
@@ -105,7 +105,7 @@ PHP
         //This fucntion can be used in any PHP framework like laravel, wordpress, drupal, cakephp etc.
 
         function aztro($sign, $day) {
-            $aztro = curl_init('https://aztro.herokuapp.com/?sign='.$sign.'&day='.$day);
+            $aztro = curl_init('https://aztro.sameerkumar.website/?sign='.$sign.'&day='.$day);
             curl_setopt_array($aztro, array(
                 CURLOPT_POST => TRUE,
                 CURLOPT_RETURNTRANSFER => TRUE,
@@ -133,7 +133,7 @@ jQuery Ajax
 
     $.ajax({
 	 type:'POST',
-	 url:'https://aztro.herokuapp.com?sign=aries&day=today',
+	 url:'https://aztro.sameerkumar.website?sign=aries&day=today',
 	 success:function(data){
 	 console.log(data);
 	 }
@@ -144,7 +144,7 @@ ECMAScript (ES6)
 ^^^^^^
 .. code-block:: javascript
 
-    const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+    const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
     fetch(URL, {
         method: 'POST'
     })
@@ -170,7 +170,7 @@ ReactJS with ES6
         }
         
         componentDidMount () {
-            const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+            const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
             fetch(URL, {
                 method: 'POST'
             }).then(response => response.json())
