@@ -264,6 +264,11 @@ Please feel free to use and adapt this small API.
     :target: http://aztro.readthedocs.io/en/latest/?badge=latest
 
 
+.. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+    :target: https://saythanks.io/to/sameerkumar18
+    
+
+
 .. Indices and tables
 .. ==================
 
