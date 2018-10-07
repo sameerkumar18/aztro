@@ -10,9 +10,6 @@ app = Flask(__name__)
 api = Api(app)
 CORS(app, support_credentials=True)
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 logger = _setup_debug_logger(__name__)
 
 

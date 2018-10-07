@@ -5,4 +5,4 @@ api = "http://aztro.herokuapp.com?sign="+sign+"&day="+day
 
 r = requests.post(api)
 
-print r
+print(r)
