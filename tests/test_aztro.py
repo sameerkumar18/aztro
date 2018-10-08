@@ -25,6 +25,7 @@ class AztroTestCase(unittest.TestCase):
         ]
 
         response_data = json.loads(response.data)
+
         for dict_key in dict_keys:
             self.assertTrue(
                 dict_key in response_data,
@@ -44,7 +45,10 @@ class AztroTestCase(unittest.TestCase):
 
         self.assertEqual(
             json.loads(response.data),
-            {'error': 404, 'text': '404: Not Found'}
+            {
+                'error': 404,
+                'text': '404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.'
+            }
         )
         self.assertEqual(response.status_code, 404)
 
@@ -53,4 +57,5 @@ class AztroTestCase(unittest.TestCase):
             for day in self.days:
                 url = '/?sign={sign}&day={day}'.format(sign=sign, day=day)
                 response = self.app.post(url)
+
                 self.assertAztroResponse(response)
