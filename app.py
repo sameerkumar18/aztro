@@ -1,10 +1,8 @@
-import sys
 import signs
 from flask import Flask, request, jsonify, redirect
 from flask_restful import Resource, Api
 from flask_cors import CORS, cross_origin
 from utils import _setup_debug_logger
-
 
 app = Flask(__name__)
 api = Api(app)
@@ -21,7 +19,6 @@ class API(Resource):
         sign = request.args.get('sign')
         day = request.args.get('day')
         timezone = request.args.get('tz')
-        print(timezone)
         response = signs.getData(sign=sign, day=day, tz=timezone)
         try:
             return response
@@ -37,4 +34,4 @@ def page_not_found(e):
 api.add_resource(API, '/')
 
 if __name__ == '__main__':
-    app.run(debug=False,threaded=True)
+    app.run(debug=False, threaded=True)
