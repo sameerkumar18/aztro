@@ -43,15 +43,15 @@ def getData(sign, day, tz=None):
         data = requests.get(str(base_url) + str(sign), params=payload)
         soup = BeautifulSoup(str(data.content), 'lxml')
 
-        date_range = str(
-            soup.find("td", {"style": "vertical-align:middle;"}).text) \
-            .partition("\n\n\t\t\t\t\t")[2] \
-            .partition("\t\t\t\t")[0]
+        date_range = str(soup.find("td", {"style": "vertical-align:middle;"}).text) \
+            .partition("\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t")[2] \
+            .partition("\\t\\t\\t\\t")[0]
+        
         current_date = soup.find(
             "p", {"style": "font-weight: bold; color: #336699;"}) \
-            .text.partition(":")[2].replace("\t", "")
+            .text.partition(":")[2].replace("\\t", "")
 
-        description = soup.find("p", {"style": "color: #333333;"}).text
+        description = soup.find("p", {"style": "color: #333333;"}).text.replace("\\", "")
 
         details = soup.find(
             "ul",
@@ -59,11 +59,11 @@ def getData(sign, day, tz=None):
                       " list-style-image: none; list-style-position: outside;"
                       " color: #336699; font-size: 0.9em; "}).find_all("li")
 
-        compatibility = details[0].text.partition(":")[2]
-        mood = details[1].text.partition(":")[2]
-        color = details[2].text.partition(":")[2]
-        lucky_number = details[3].text.partition(":")[2]
-        lucky_time = details[4].text.partition(":")[2]
+        compatibility = details[0].text.partition(":")[2].strip()
+        mood = details[1].text.partition(":")[2].strip()
+        color = details[2].text.partition(":")[2].strip()
+        lucky_number = details[3].text.partition(":")[2].strip()
+        lucky_time = details[4].text.partition(":")[2].strip()
         json_tbreturned = {
             'date_range': str(date_range),
             'current_date': str(current_date),

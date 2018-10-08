@@ -25,6 +25,7 @@ class AztroTestCase(unittest.TestCase):
         ]
 
         response_data = json.loads(response.data)
+
         for dict_key in dict_keys:
             self.assertTrue(
                 dict_key in response_data,
@@ -56,4 +57,5 @@ class AztroTestCase(unittest.TestCase):
             for day in self.days:
                 url = '/?sign={sign}&day={day}'.format(sign=sign, day=day)
                 response = self.app.post(url)
+
                 self.assertAztroResponse(response)
