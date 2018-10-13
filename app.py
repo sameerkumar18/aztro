@@ -36,7 +36,7 @@ class API(Resource):
             return response, 200
         except Exception as e:
             logger.error("{}".format(e))
-            return {'message': str(e)}, 204
+            return {'message': str(e)}, 400
 
 
 @app.errorhandler(404)
