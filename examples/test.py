@@ -1,8 +1,8 @@
 import requests
 day = "today"
 sign = "aries"
-api = "http://aztro.sameerkumar.website/?sign="+sign+"&day="+day
+api_url = "https://aztro.sameerkumar.website/?sign="+sign+"&day="+day
 
-r = requests.post(api)
+r = requests.post(api_url)
 
 print(r)

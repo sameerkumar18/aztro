@@ -1,7 +1,7 @@
 import unittest
 
-from signs import get_day_based_on_tz
-from signs import SERVER_TIMEZONE
+from astrology import get_day_based_on_tz
+from astrology import SERVER_TIMEZONE
 
 
 class TestSigns(unittest.TestCase):

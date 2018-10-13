@@ -1,10 +1,9 @@
 from .. import app as aztro
 import unittest
 import json
-import os
+
 
 class AztroTestCase(unittest.TestCase):
-
     signs = [
         'aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra',
         'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces'
@@ -46,8 +45,7 @@ class AztroTestCase(unittest.TestCase):
         self.assertEqual(
             json.loads(response.data),
             {
-                'error': 404,
-                'text': '404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.'
+                'error': 302,
             }
         )
         self.assertEqual(response.status_code, 404)
