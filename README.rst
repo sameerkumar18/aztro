@@ -27,7 +27,6 @@ URL
 .. code-block:: python
 
     POST: https://aztro.sameerkumar.website
-Note: I highly recommend you to host the API for your usage on your own server, and use this Heroku hosted API for test purpose only.
 
 
 Parameters
