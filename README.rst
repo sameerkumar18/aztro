@@ -214,6 +214,14 @@ Tests
     nosetests tests
 
 
+API Wrappers
+============
+
+For Python - `PyAztro <https://github.com/sameerkumar18/pyaztro>`_ (pip install pyaztro)
+
+For NodeJS - `aztro-js <https://github.com/srijitcoder/aztro-js>`_ (npm install aztro-js)
+
+
 License
 =======
 
