@@ -3,7 +3,7 @@
 Welcome to aztro's documentation!
 #################################
 
-.. image:: https://image.ibb.co/grSuDw/aztro_2.jpg
+.. image:: https://i.ibb.co/GsQG17p/astro-bg.png
    :height: 200px
    :width: 200px
    :alt: aztro api logo
@@ -131,11 +131,11 @@ jQuery Ajax
 .. code-block:: javascript
 
     $.ajax({
-	 type:'POST',
-	 url:'https://aztro.sameerkumar.website?sign=aries&day=today',
-	 success:function(data){
-	 console.log(data);
-	 }
+   type:'POST',
+   url:'https://aztro.sameerkumar.website?sign=aries&day=today',
+   success:function(data){
+   console.log(data);
+   }
     });
 
 
@@ -263,8 +263,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for PHP, ECMAScript and ReactJS example)
-    * Prateek Batra (For logo)
+    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Astro Logo - PHP, ECMAScript and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
