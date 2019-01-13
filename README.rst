@@ -3,9 +3,9 @@
 Welcome to aztro's documentation!
 #################################
 
-.. image:: https://image.ibb.co/grSuDw/aztro_2.jpg
-   :height: 200px
-   :width: 200px
+.. image:: https://github.com/srijitcoder/aztro/raw/master/astro-bg.png
+   :height: 412px
+   :width: 898px
    :alt: aztro api logo
    :align: center
 
@@ -131,11 +131,11 @@ jQuery Ajax
 .. code-block:: javascript
 
     $.ajax({
-	 type:'POST',
-	 url:'https://aztro.sameerkumar.website?sign=aries&day=today',
-	 success:function(data){
-	 console.log(data);
-	 }
+   type:'POST',
+   url:'https://aztro.sameerkumar.website?sign=aries&day=today',
+   success:function(data){
+   console.log(data);
+   }
     });
 
 
@@ -152,6 +152,39 @@ ECMAScript (ES6)
         const date = json.current_date;
         console.log(date);
     });
+
+
+Vue.JS using axios
+^^^^^^
+.. code-block:: html
+
+    <ul id="aztro">
+        <li>Current Date: {{data.current_date}}</li>
+        <li>Compatibility: {{data.compatibility}}</li>
+        <li>Lucky Number: {{data.lucky_number}}</li>
+        <li>Lucky Time: {{data.lucky_time}}</li>
+        <li>Color: {{data.color}}</li>
+        <li>Date Range: {{data.date_range}}</li> 
+        <li>Mood: {{data.mood}}</li>
+        <li>Description: {{data.description}}</li>
+    </ul>
+
+.. code-block:: javascript
+
+    const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+    new Vue({
+        el: '#aztro',
+        data() {
+                return {
+                data: {}
+            }
+        },
+        created() {
+            axios.post(URL).then((response) => {
+                this.data = response.data
+            })
+        }
+    })
 
 
 ReactJS with ES6
@@ -263,8 +296,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for PHP, ECMAScript and ReactJS example)
-    * Prateek Batra (For logo)
+    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript, VueJS and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
