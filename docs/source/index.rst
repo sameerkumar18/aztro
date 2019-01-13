@@ -4,8 +4,6 @@ Welcome to aztro's documentation!
 #################################
 
 .. image:: https://github.com/sameerkumar18/aztro/raw/master/aztro-bg.png
-   :height: 412px
-   :width: 898px
    :alt: aztro api logo
    :align: center
 
