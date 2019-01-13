@@ -3,7 +3,7 @@
 Welcome to aztro's documentation!
 #################################
 
-.. image:: https://github.com/srijitcoder/aztro/raw/master/astro-bg.png
+.. image:: https://github.com/sameerkumar18/aztro/raw/master/aztro-bg.png
    :height: 412px
    :width: 898px
    :alt: aztro api logo
