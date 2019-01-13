@@ -41,14 +41,7 @@ class AztroTestCase(unittest.TestCase):
 
     def test_page_not_found(self):
         response = self.app.get('/notfound', follow_redirects=False)
-
-        self.assertEqual(
-            json.loads(response.data),
-            {
-                'error': 302,
-            }
-        )
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 302)
 
     def test_api(self):
         for sign in self.signs:
