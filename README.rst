@@ -296,7 +296,7 @@ Credits
 Other Contributors - 
     * Harshit Sahni (for the idea)
     * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript and ReactJS example)
+    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript, VueJS and ReactJS example)
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
