@@ -1,8 +1,18 @@
 
 #################################
-Welcome to aztro's documentation!
+aztro - The astrology API 
 #################################
+ Free and open API. Needs no authentication
+.. |Travis| image:: https://travis-ci.org/sameerkumar18/aztro.svg?branch=master
+    :target: https://travis-ci.org/sameerkumar18/aztro
 
+.. |SayThanks| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+    :target: https://saythanks.io/to/sameerkumar18
+
+.. |Paypal| image:: https://img.shields.io/badge/Paypal-Donate-blue.svg
+    :target: https://www.paypal.me/sameerkumar18
+    
+    
 .. image:: https://github.com/sameerkumar18/aztro/raw/master/aztro-bg.png
    :height: 412px
    :width: 898px
