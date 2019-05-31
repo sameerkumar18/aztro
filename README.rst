@@ -3,14 +3,7 @@
 aztro - The astrology API 
 #################################
  Free and open API. Needs no authentication
-.. |Travis| image:: https://travis-ci.org/sameerkumar18/aztro.svg?branch=master
-    :target: https://travis-ci.org/sameerkumar18/aztro
-
-.. |SayThanks| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-    :target: https://saythanks.io/to/sameerkumar18
-
-.. |Paypal| image:: https://img.shields.io/badge/Paypal-Donate-blue.svg
-    :target: https://www.paypal.me/sameerkumar18
+|Travis| |Docs| |Maintenance yes| |SayThanks| |Paypal|
     
     
 .. image:: https://github.com/sameerkumar18/aztro/raw/master/aztro-bg.png
@@ -314,16 +307,22 @@ and if I have neglected to mention someone, please let me know.
 
 Please feel free to use and adapt this small API.
 
-
-
-.. image:: https://readthedocs.org/projects/aztro/badge/?version=latest
-    :target: http://aztro.readthedocs.io/en/latest/?badge=latest
-
-
-.. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-    :target: https://saythanks.io/to/sameerkumar18
     
+.. |Docs| image:: https://readthedocs.org/projects/aztro/badge/?version=latest
+    :target: http://aztro.readthedocs.io/en/latest/?badge=latest
+    
+.. |Maintenance yes| image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
+   :target: https://gitHub.com/sameerkumar18/pyaztro
 
+
+.. |Travis| image:: https://travis-ci.org/sameerkumar18/aztro.svg?branch=master
+    :target: https://travis-ci.org/sameerkumar18/aztro
+
+.. |SayThanks| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+    :target: https://saythanks.io/to/sameerkumar18
+
+.. |Paypal| image:: https://img.shields.io/badge/Paypal-Donate-blue.svg
+    :target: https://www.paypal.me/sameerkumar18
 
 .. Indices and tables
 .. ==================
