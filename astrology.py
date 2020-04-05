@@ -65,14 +65,13 @@ def horoscope_info(sign, day, tz=None):
     color = details[2].text.partition(":")[2].strip()
     lucky_number = details[3].text.partition(":")[2].strip()
     lucky_time = details[4].text.partition(":")[2].strip()
-    horoscope_data = {
-        'date_range': str(date_range),
-        'current_date': str(current_date),
-        'description': str(description),
-        'compatibility': str(compatibility),
-        'mood': str(mood),
-        'color': str(color),
-        'lucky_number': str(lucky_number),
-        'lucky_time': str(lucky_time)
-    }
-    return horoscope_data
+    return {
+            'date_range': str(date_range),
+            'current_date': str(current_date),
+            'description': str(description),
+            'compatibility': str(compatibility),
+            'mood': str(mood),
+            'color': str(color),
+            'lucky_number': str(lucky_number),
+            'lucky_time': str(lucky_time)
+        }
