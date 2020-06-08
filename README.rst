@@ -324,11 +324,7 @@ If this project help you reduce time to develop, please consider donating :)
 Credits
 =======
 
-"aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
-Other Contributors - 
-    * Harshit Sahni (for the idea)
-    * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript, VueJS and ReactJS example)
+"aztro" was created by `Sameer Kumar <https://www.sameerkumar.website>`_ and a these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
