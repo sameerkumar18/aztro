@@ -11,7 +11,7 @@ This resource was made by the developers and hackers alike! We appreciate and re
 
 ## Adding to the List
 
-- Please add the content to the `README.md` file and make sure that the edited list is in alphabetical order. [Screenshot](https://i.ibb.co/m9Lnfdm/Screenshot-2020-06-08-at-1-05-29-PM.png)
+- Please add the content to the `README.rst` file and make sure that the edited list is in alphabetical order. [Screenshot](https://i.ibb.co/m9Lnfdm/Screenshot-2020-06-08-at-1-05-29-PM.png)
 - Submit a pull request.
 
 ## Removing from the List
