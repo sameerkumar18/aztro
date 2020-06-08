@@ -328,8 +328,6 @@ Credits
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
-and if I have neglected to mention someone, please let me know.
-
 Please feel free to use and adapt this small API.
 
     
