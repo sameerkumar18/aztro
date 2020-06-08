@@ -324,7 +324,7 @@ If this project help you reduce time to develop, please consider donating :)
 Credits
 =======
 
-"aztro" was created by `Sameer Kumar <https://www.sameerkumar.website>`_ and a these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
+"aztro" was created by `Sameer Kumar <https://www.sameerkumar.website>`_ and these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
