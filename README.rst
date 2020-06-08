@@ -275,8 +275,7 @@ Projects using aztro API
     </table>
 
 
-Used aztro API in your project? Check out the `contributing guidelines <https://github
-.com/sameerkumar/aztro/contributing.md>`_ for this list and let us know. we love PRs :)
+Used aztro API in your project? Check out the `contributing guidelines <https://github.com/sameerkumar18/aztro/blob/master/contributing.md>`_ for this list and let us know. we love PRs :)
 
 
 API Wrappers
