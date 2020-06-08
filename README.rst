@@ -104,7 +104,7 @@ PHP
 
     <?php
 
-        //This fucntion can be used in any PHP framework like laravel, wordpress, drupal, cakephp etc.
+        //This function can be used in any PHP framework like laravel, wordpress, drupal, cakephp etc.
 
         function aztro($sign, $day) {
             $aztro = curl_init('https://aztro.sameerkumar.website/?sign='.$sign.'&day='.$day);
@@ -158,7 +158,7 @@ ECMAScript (ES6)
 
 
 Vue.JS using axios
-^^^^^^
+^^^^^^^^^^^^^^^^^^
 .. code-block:: html
 
     <ul id="aztro">
@@ -249,6 +249,34 @@ Tests
     pip install nose
     nosetests tests
 
+Projects using aztro API
+========================
+
+.. raw:: html
+
+   <table> 
+    <tr>
+      <th>Repository</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/Bratanov/community-driven-radio">Community Driven Radio</a>
+      </td>
+      <td>A radio station driven by the community</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/andreslopezrm/WatchOS_Swift_Horoscope">Horoscope Apple Watch App</a>
+      </td>
+      <td>Apple Watch Application for Horoscope</td>
+    </tr>
+    
+    </table>
+
+
+Used aztro API in your project? Check out the `contributing guidelines <https://github.com/sameerkumar18/aztro/blob/master/contributing.md>`_ for this list and let us know. we love PRs :)
+
 
 API Wrappers
 ============
@@ -261,32 +289,24 @@ For NodeJS - `aztro-js <https://github.com/srijitcoder/aztro-js>`_ (npm install 
 License
 =======
 
-Copyright 2018 Sameer Kumar
+2020 Sameer Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 
 
 
 Contact
 =======
 
-Questions? Suggestions? Feel free to contact me at sameer18051998@gmail.com
+Questions? Suggestions? Feel free to contact me at sam@sameerkumar.website
 
 
 Donation
 ========
 
-If this project help you reduce time to develop, please consider donating :) 
+If this project helped you reduce the development time, please consider donating :) 
 
 .. image:: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
     :target: https://www.paypal.me/sameerkumar18
@@ -295,15 +315,9 @@ If this project help you reduce time to develop, please consider donating :)
 Credits
 =======
 
-"aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
-Other Contributors - 
-    * Harshit Sahni (for the idea)
-    * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript, VueJS and ReactJS example)
+"aztro" was created by `Sameer Kumar <https://www.sameerkumar.website>`_ and these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
-
-and if I have neglected to mention someone, please let me know.
 
 Please feel free to use and adapt this small API.
 
