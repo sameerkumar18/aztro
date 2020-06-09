@@ -271,6 +271,12 @@ Projects using aztro API
       </td>
       <td>Apple Watch Application for Horoscope</td>
     </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/sergeKashkin/daily_scope">Your Daily Horoscope</a>
+      </td>
+      <td>React app which shows your daily horoscope</td>
+    </tr>
     
     </table>
 
