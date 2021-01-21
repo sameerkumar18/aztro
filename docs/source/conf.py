@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'aztro'
-copyright = u'2017, Sameer Kumar'
+copyright = u'2021, Sameer Kumar'
 author = u'Sameer Kumar'
 
 # The version info for the project you're documenting, acts as replacement for

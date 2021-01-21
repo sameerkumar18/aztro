@@ -1,7 +1,9 @@
-from astrology import horoscope_info
-from flask import Flask, request, redirect
-from flask_restful import Resource, Api
+import requests
+from flask import Flask, request, redirect, make_response
 from flask_cors import CORS
+from flask_restful import Resource, Api
+
+from astrology import horoscope_info
 from utils import _setup_debug_logger
 
 app = Flask(__name__)
@@ -16,13 +18,15 @@ signs = [
 ]
 
 days = [
-        'today', 'tomorrow', 'yesterday'
+    'today', 'tomorrow', 'yesterday'
 ]
 
 
 class API(Resource):
     def get(self):
-        return redirect("https://aztro.readthedocs.io/en/latest/", code=302)
+        # Source: https://github.com/sameerkumar18/aztro-landing-page
+        return make_response(
+            requests.get('https://cdn.jsdelivr.net/gh/sameerkumar18/aztro-landing-page/index.html').text)
 
     def post(self):
         sign = request.args['sign'].lower()
@@ -41,7 +45,7 @@ class API(Resource):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return redirect("https://aztro.readthedocs.io/en/latest/", code=302)
+    return redirect("/", code=302)
 
 
 api.add_resource(API, '/')

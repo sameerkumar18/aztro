@@ -253,7 +253,7 @@ For NodeJS - `aztro-js <https://github.com/srijitcoder/aztro-js>`_ (npm install 
 License
 =======
 
-Copyright 2017 Sameer Kumar
+Copyright 2021 Sameer Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -272,38 +272,32 @@ limitations under the License.
 Contact
 =======
 
-Questions? Suggestions? Feel free to contact me at sameer18051998@gmail.com
+Questions? Suggestions? Feel free to contact me at sam+aztro-docs@sameerkumar.website
 
 
-Donation
-========
+Buy me a coffee 🥤
+=====================
 
-If this project help you reduce time to develop, please consider donating :) 
+If this project help you reduce time to develop, please consider buying me a coffee :)
 
-.. image:: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
-    :target: https://www.paypal.me/sameerkumar18
+.. image:: https://media.giphy.com/media/513lZvPf6khjIQFibF/giphy.gif
+    :target: https://www.buymeacoffee.com/sameerkumar
 
 
 
 Credits
 =======
 
-"aztro" was created by `Sameer Kumar <http://www.sameerkumar.website>`_. 
-Other Contributors - 
-    * Harshit Sahni (for the idea)
-    * Aditya Dhawan (for Ajax example)
-    * `Srijit S Madhavan <http://srijitcoder.me/>`_ (for Aztro Logo - PHP, ECMAScript, VueJS and ReactJS example)
+"aztro" was created by `Sameer Kumar <https://sameerkumar.website>`_ and these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
-
-and if I have neglected to mention someone, please let me know.
 
 Please feel free to use and adapt this small API.
 
 
 
 .. image:: https://readthedocs.org/projects/aztro/badge/?version=latest
-    :target: http://aztro.readthedocs.io/en/latest/?badge=latest
+    :target: https://aztro.readthedocs.io/en/latest/?badge=latest
 
 
 .. Indices and tables
