@@ -1,8 +1,9 @@
 from astrology import horoscope_info
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, make_response
 from flask_restful import Resource, Api
 from flask_cors import CORS
 from utils import _setup_debug_logger
+import requests
 
 app = Flask(__name__)
 api = Api(app)
@@ -22,7 +23,8 @@ days = [
 
 class API(Resource):
     def get(self):
-        return redirect("https://aztro.readthedocs.io/en/latest/", code=302)
+        # Source: https://github.com/sameerkumar18/aztro-landing-page
+        return make_response(requests.get('https://cdn.jsdelivr.net/gh/sameerkumar18/aztro-landing-page/index.html').text)
 
     def post(self):
         sign = request.args['sign'].lower()
