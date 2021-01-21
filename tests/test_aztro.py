@@ -34,10 +34,7 @@ class AztroTestCase(unittest.TestCase):
 
     def test_landing_page(self):
         response = self.app.get('/', follow_redirects=False)
-
-        expectedPath = 'https://aztro.readthedocs.io/en/latest/'
-        self.assertEqual(response.location, expectedPath)
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 200)
 
     def test_page_not_found(self):
         response = self.app.get('/notfound', follow_redirects=False)

@@ -295,7 +295,7 @@ For NodeJS - `aztro-js <https://github.com/srijitcoder/aztro-js>`_ (npm install 
 License
 =======
 
-2020 Sameer Kumar
+2021 Sameer Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 
@@ -306,22 +306,22 @@ Licensed under the Apache License, Version 2.0 (the "License");
 Contact
 =======
 
-Questions? Suggestions? Feel free to contact me at sam@sameerkumar.website
+Questions? Suggestions? Feel free to contact me at sam+aztro-ghreadme@sameerkumar.website
 
 
-Donation
-========
+Buy me a coffee 🥤
+=====================
 
 If this project helped you reduce the development time, please consider donating :) 
 
-.. image:: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
-    :target: https://www.paypal.me/sameerkumar18
+.. image:: https://i.giphy.com/media/513lZvPf6khjIQFibF/giphy.webp
+    :target: https://www.buymeacoffee.com/sameerkumar
 
 
 Credits
 =======
 
-"aztro" was created by `Sameer Kumar <https://www.sameerkumar.website>`_ and these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
+"aztro" was created by `Sameer Kumar <https://sameerkumar.website>`_ and these awesome individual `contributors <https://github.com/sameerkumar18/aztro/graphs/contributors>`_
 
 Source of horoscope updates - http://astrology.kudosmedia.net/
 
@@ -329,7 +329,7 @@ Please feel free to use and adapt this small API.
 
     
 .. |Docs| image:: https://readthedocs.org/projects/aztro/badge/?version=latest
-    :target: http://aztro.readthedocs.io/en/latest/?badge=latest
+    :target: https://aztro.readthedocs.io/en/latest/?badge=latest
     
 .. |Maintenance yes| image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
    :target: https://gitHub.com/sameerkumar18/pyaztro
@@ -339,10 +339,10 @@ Please feel free to use and adapt this small API.
     :target: https://travis-ci.org/sameerkumar18/aztro
 
 .. |SayThanks| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-    :target: https://saythanks.io/to/sameerkumar18
+    :target: https://saythanks.io/to/sameer18051998%40gmail.com
 
 .. |Paypal| image:: https://img.shields.io/badge/Paypal-Donate-blue.svg
-    :target: https://www.paypal.me/sameerkumar18
+    :target: https://www.buymeacoffee.com/sameerkumar
 
 .. Indices and tables
 .. ==================
