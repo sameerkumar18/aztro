@@ -231,6 +231,44 @@ ReactJS with ES6
     export default Aztro;
 
 
+Golang
+^^^^^^
+.. code-block:: Golang
+
+    package main
+
+    import (
+        "fmt"
+        "log"
+
+        "github.com/irfansofyana/go-aztro-api-wrapper/aztro"
+    )
+
+    func main() {
+        aztroClient, err := aztro.NewAztroClient()
+        if err != nil {
+            log.Fatal(err)
+        }
+
+        aztroParam := aztro.NewAztroRequestParam(aztro.Taurus)
+        todayHoroscope, aztroErr := aztroClient.GetHoroscope(aztroParam)
+        if aztroErr != nil {
+            log.Fatal(aztroErr)
+        }
+        fmt.Println(todayHoroscope) // Get today's horoscope
+
+        tmrrowParam := aztro.NewAztroRequestParam(
+            aztro.Taurus,
+            aztro.WithDay(aztro.Tomorrow),
+        )
+        tmrrwHoroscope, aztroErr := aztroClient.GetHoroscope(tmrrowParam)
+        if aztroErr != nil {
+            log.Fatal(aztroErr)
+        }
+        fmt.Println(tmrrwHoroscope) // Get tomorrow's horoscope
+    }
+
+
 Response
 ^^^^^^^^
 .. code-block:: json
@@ -290,6 +328,8 @@ API Wrappers
 For Python - `PyAztro <https://github.com/sameerkumar18/pyaztro>`_ (pip install pyaztro)
 
 For NodeJS - `aztro-js <https://github.com/srijitcoder/aztro-js>`_ (npm install aztro-js)
+
+For Golang - `go-aztro-api-wrapper <https://github.com/irfansofyana/go-aztro-api-wrapper>`_ (go get github.com/irfansofyana/go-aztro-api-wrapper)
 
 
 License
