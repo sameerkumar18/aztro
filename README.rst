@@ -311,6 +311,12 @@ Projects using aztro API
     </tr>
     <tr>
       <td>
+        <a href="https://astro-embed-notion.vercel.app/">Astro Embed</a>
+      </td>
+      <td>A daily horoscope embed for Notion.</td>
+    </tr>
+    <tr>
+      <td>
         <a href="https://github.com/sergeKashkin/daily_scope">Your Daily Horoscope</a>
       </td>
       <td>React app which shows your daily horoscope</td>
