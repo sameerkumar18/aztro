@@ -60,8 +60,7 @@ cURL
 ^^^^
 .. code-block:: python
 
-    curl -X POST \
-    'https://aztro.sameerkumar.website/?sign=aries&day=today'
+    curl -X POST 'https://aztro.sameerkumar.website/?sign=aries&day=today'
 
 
 Python
