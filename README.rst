@@ -305,6 +305,12 @@ Projects using aztro API
     </tr>
     <tr>
       <td>
+        <a href="https://github.com/DeybisMelendez/daily-horoscope">Daily Horoscope</a>
+      </td>
+      <td>A horoscope website built from scratch with html, css and javascript</td>
+    </tr>
+    <tr>
+      <td>
         <a href="https://github.com/andreslopezrm/WatchOS_Swift_Horoscope">Horoscope Apple Watch App</a>
       </td>
       <td>Apple Watch Application for Horoscope</td>
